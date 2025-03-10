@@ -4,101 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Nature</title>
+    <title>Colorful Calculator</title>
     <style>
-        div {
-            border-radius: 80%;
-            height: 80%;
-            width: 80%;
-        }
-
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            background: #e3f2fd;
+            background-color: #2c3e50;
         }
 
-        header {
-            background: #0288d1;
-            color: white;
+        .calculator {
+            background-color: #34495e;
+            border-radius: 15px;
             padding: 20px;
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
+            width: 320px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         }
 
-        nav {
-            background: #01579b;
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-size: 20px;
-            padding: 10px 15px;
-            border-radius: 5px;
-        }
-
-        nav a:hover {
-            background: #03a9f4;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-
-        .container img {
+        .input-container {
+            position: relative;
             width: 100%;
-            border-radius: 10px;
+            margin-bottom: 20px;
         }
 
-        footer {
-            background: #01579b;
-            color: white;
-            text-align: center;
+        input {
+            width: 100%;
             padding: 15px;
-            margin-top: 50px;
+            font-size: 30px;
+            text-align: right;
+            border: none;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            color: #2c3e50;
+        }
+
+        .name-overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            color: #95a5a6;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .button-container button {
+            padding: 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #bdc3c7;
+            color: #2c3e50;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #95a5a6;
+            transform: scale(1.1);
+        }
+
+        .button-container button:active {
+            background-color: #7f8c8d;
+        }
+
+        .button-container button.operator {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .button-container button.operator:hover {
+            background-color: #c0392b;
+        }
+
+        .button-container button.operator:active {
+            background-color: #922b21;
+        }
+
+        .button-container button.clear {
+            background-color: #f39c12;
+            color: white;
+        }
+
+        .button-container button.clear:hover {
+            background-color: #e67e22;
+        }
+
+        .button-container button.clear:active {
+            background-color: #d35400;
+        }
+
+        .button-container button.equals {
+            background-color: #2ecc71;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .button-container button.equals:hover {
+            background-color: #27ae60;
+        }
+
+        .button-container button.equals:active {
+            background-color: #1e8449;
         }
     </style>
 </head>
 
 <body>
-    <header><b><u>Explore the Beauty of Nature</u></b></header>
-    <nav>
-        <h3 style="color:rgb(235, 235, 58)
-        "><b><u>"Please click the button to explore more famous places in Bihar."</u></b></h3>
-        <a href="banka.html">Home</a>
-        <a href="forests.html">Forests</a>
-        <a href="oceans.html">Oceans</a>
-        <a href="mountains.html">Mountains</a>
-    </nav>
-
-    <div class="container">
-        <h2><b><u>Welcome to Nature's Wonders</u></b></h2>
-        <p><b>प्रकृति की मंत्रमुग्ध कर देने वाली सुंदरता में खो जाइए, जहाँ घने हरे-भरे जंगल, अथाह और रहस्यमयी महासागर,
-                और विशाल पर्वत मिलकर एक मनमोहक दृश्य प्रस्तुत करते हैं। घने वनों की अद्भुत जैव विविधता को जानिए, गहरे
-                नीले समुद्र की अनंत लहरों को महसूस कीजिए, और उन ऊँचे पर्वतों के सामने खड़े हो जाइए जो आकाश को छूने की
-                कोशिश करते हैं। प्रकृति के ये अद्भुत नज़ारे हमें शांति, रोमांच और इस अद्भुत संसार से एक गहरा जुड़ाव
-                प्रदान करते हैं।</b></p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Ghora_katora_lake.jpg" alt="Beautiful Nature"
-            height="50%">
-        <h3 style="color:#0c689a"><b><u>Beautiful Nature , Rajgir , Bihar.</u></b></h3>
-        <img src="https://www.jagranimages.com/images/newimg/08092023/08_09_2023-mandar_parwat_23525137_181336466.webp"
-            alt="Mandar Hill , Banka , Bihar" height="50%">
-        <h3 style="color:#c43f05"><b><u>Mandar-Hill , Banka , Bihar.</u></b></h3>
+    <div class="calculator">
+        <div class="input-container">
+            <input type="text" id="display" disabled>
+            <div class="name-overlay">Developed by Alok</div> <!-- Your name displayed here -->
+        </div>
+        <div class="button-container">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button class="operator" onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button class="operator" onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button class="operator" onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button class="equals" onclick="calculate()">=</button>
+            <button class="operator" onclick="appendToDisplay('/')">/</button>
+        </div>
     </div>
 
-    <footer>&copy; 2025 Explore Nature.Developer By Alok Kumar.</footer>
+    <script>
+        // Function to append the clicked value to the display
+        function appendToDisplay(value) {
+            const display = document.getElementById('display');
+            display.value += value;
+        }
+
+        // Function to clear the display
+        function clearDisplay() {
+            const display = document.getElementById('display');
+            display.value = '';
+        }
+
+        // Function to calculate the result
+        function calculate() {
+            const display = document.getElementById('display');
+            try {
+                display.value = eval(display.value); // Using eval to calculate the expression
+            } catch (error) {
+                display.value = 'Error';
+            }
+        }
+    </script>
 </body>
 
 </html>
